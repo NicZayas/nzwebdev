@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_btn {
+  @apply hover:text-purple-300 p-1.5 relative;
+}
+
+.a_tags {
+  @apply before:block before:h-1 before:bg-purple-300 before:absolute before:top-0 before:w-0 before:transition-all before:ease-in-out before:duration-200
+    hover:before:w-full;
+}
+
+.form-container label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-container input:focus + label span,
+.form-container input:valid + label span {
+  transform: translateY(-30px);
+}
+
+.card {
+    transform: translateX(400%);
+    transition: transform .8s ease;
+}
+
+.card:nth-last-of-type(odd) {
+    transform: translateX(-400%);
+}
+
+.card.show {
+    transform: translateX(0);
+    
+}
+
+body {
+    overflow-x: hidden;
+}
