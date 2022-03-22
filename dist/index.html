@@ -18,7 +18,7 @@
   <body class="font-raleway">
     <section id="home">
       <div class="bg-purple-600 h-screen relative">
-        <nav class="bg-white flex justify-between items-center p-4 text-purple-600">
+        <nav class="bg-white flex justify-between items-center sm:p-4 text-purple-600">
           <div class="font-extrabold text-5xl animate-fade-in-across-right">NZ</div>
           <ul class="font-light flex gap-4 ">
             <li class="nav_btn"><a href="#about" class="a_tags">About</a></li>
@@ -27,12 +27,12 @@
           </ul>
         </nav>
 
-        <main class="flex justify-around items-center h-screen text-white">
+        <main class="flex sm:justify-around flex-col sm:flex-row items-center h-screen text-white pt-20">
           <div class="text-center text-6xl">
             <div class="font-light">Nicolas Zayas</div>
             <div class="font-thin">Front End Web Developer</div>
           </div>
-          <ul class="flex flex-col items-center text-4xl font-extralight gap-4">
+          <ul class="flex sm:flex-col items-center sm:text-4xl pt-4 font-extralight gap-4">
             <li
               class="outline-double p-2 hover:outline hover:rounded-sm hover:scale-105 hover:shadow-2xl"
             >
@@ -51,30 +51,33 @@
           </ul>
         </main>
 
-        <div class="absolute bottom-10 left-1/2 right-1/2">
-          <a
-            href="#about"
-            class="flex flex-col items-center cursor-pointer animate-bounce"
-          >
-            <div class="text-white">About</div>
-            <div>
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-                ></path>
-              </svg>
-            </div>
-          </a>
+        <div class="invisible sm:visible">
+          <div class="absolute bottom-10 left-1/2 right-1/2">
+            <a
+              href="#about"
+              class="flex flex-col items-center cursor-pointer animate-bounce"
+            >
+              <div class="text-white">About</div>
+              <div>
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
+        
       </div>
     </section>
 
@@ -133,7 +136,7 @@
 
     <section id="work">
       <div
-        class="bg-purple-600 h-screen relative flex justify-center items-center gap-44"
+        class="bg-purple-600 h-screen relative flex lg:justify-center sm:flex-row items-center gap-44"
       >
         <div class="absolute flex justify-center top-5 text-5xl text-white border-b-2">Projects</div>
         <div class="bg-purple-400 rounded shadow-2xl w-1/4 z-50">
